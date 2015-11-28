@@ -1,4 +1,4 @@
-package ar.edu.tp;
+package aydoo.edu.tp;
 
 public class Foo {
 

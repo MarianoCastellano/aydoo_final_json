@@ -1,9 +1,9 @@
-package ar.edu.tp.test;
+package aydoo.edu.tp.test;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import ar.edu.tp.Foo;
+import aydoo.edu.tp.Foo;
 
 public class FooTest {
 
