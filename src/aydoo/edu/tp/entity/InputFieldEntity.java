@@ -1,4 +1,4 @@
-package aydoo.edu.tp;
+package aydoo.edu.tp.entity;
 
 public class InputFieldEntity {
 

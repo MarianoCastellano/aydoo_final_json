@@ -1,10 +1,12 @@
-package aydoo.edu.tp;
+package aydoo.edu.tp.parser;
 
-public class ParseJson implements Parser {
+import aydoo.edu.tp.entity.InputEntity;
+
+public class JsonParser implements Parser {
 
 	private InputEntity inputEntity;
 
-	public ParseJson(InputEntity inputEntity) {
+	public JsonParser(InputEntity inputEntity) {
 		this.inputEntity = inputEntity;
 	}
 
