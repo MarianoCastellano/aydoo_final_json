@@ -1,18 +1,9 @@
 package aydoo.edu.tp.ui;
 
-import java.awt.GridLayout;
-import java.util.Iterator;
-
 import javax.swing.Box;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
 import javax.swing.SwingConstants;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
 
 public class EditEntity {
 
@@ -31,23 +22,27 @@ public class EditEntity {
 	}
 
 	private void drawFields(String content, Box box) {
-		JSONObject jsonObject = new JSONObject(content);
-		JSONArray campos = jsonObject.getJSONArray("campos");
 
-		Iterator<Object> iterator = campos.iterator();
-
-		while (iterator.hasNext()) {
-			JSONObject object = (JSONObject) iterator.next();
-			String name = object.getString("nombre");
-
-			JPanel jPanel = new JPanel(new GridLayout());
-			JLabel nameLabel = new JLabel(name);
-			JTextField nameInput = new JTextField("", 15);
-			jPanel.add(nameLabel);
-			jPanel.add(nameInput);
-
-			box.add(jPanel);
-		}
+		// Pincha al compilar ya que no conoce la libreria.
+		
+		
+		// JSONObject jsonObject = new JSONObject(content);
+		// JSONArray campos = jsonObject.getJSONArray("campos");
+		//
+		// Iterator<Object> iterator = campos.iterator();
+		//
+		// while (iterator.hasNext()) {
+		// JSONObject object = (JSONObject) iterator.next();
+		// String name = object.getString("nombre");
+		//
+		// JPanel jPanel = new JPanel(new GridLayout());
+		// JLabel nameLabel = new JLabel(name);
+		// JTextField nameInput = new JTextField("", 15);
+		// jPanel.add(nameLabel);
+		// jPanel.add(nameInput);
+		//
+		// box.add(jPanel);
+		// }
 
 		JButton button = new JButton("GUARDAR");
 		button.setHorizontalAlignment(SwingConstants.CENTER);
